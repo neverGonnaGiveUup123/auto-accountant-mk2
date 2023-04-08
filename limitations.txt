@@ -1,0 +1,5 @@
+Mistakes "bank overdraft" for "bank" account
+Cannot do adjustments
+Cannot handle multiple of the same account
+New adjusted values must be written BEFORE the old values
+Any dates must be written with "/" between the dates, not spaces (DD/MM/YY not DD MM YY)
