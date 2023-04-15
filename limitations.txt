@@ -3,3 +3,6 @@ Cannot do adjustments
 Cannot handle multiple of the same account
 New adjusted values must be written BEFORE the old values
 Any dates must be written with "/" between the dates, not spaces (DD/MM/YY not DD MM YY)
+Tends to mistake 1 for a 7. This is a common OCR mistake so not much I can do about it
+Can't recognise accrued expense account
+Can't have spaces in the money entries
