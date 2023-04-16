@@ -18,6 +18,7 @@ class readTrialBalance:
     def get_classifications(self):
         with open("src/data/currentAssets.json", "r") as file:
             self.currentAssetsJson = self.json.load(file)
+            # [self.currentAssetsJson.update({i, (0,0,0)}) for i in self.currentAssetsJson.keys()]
         self.os.remove("src/data/currentAssets.json")
 
         with open("src/data/nonCurrentAssets.json", "r") as file:
@@ -57,12 +58,14 @@ class readTrialBalance:
             self.non_current_liablities,
             self.equity,
         ]:
+            for x in j.keys():
+                j[x] = [0,0,0]
             exceptions_list = []
             [exceptions_list.append(i) for i in j.keys()]
             temp_list = []
             for words in self.string_trial_balance.split():
                 temp_list.append(words)
-            print(temp_list)
+            # print(temp_list)
             loop_list = [4, 3, 2, 1]
 
             if exceptions_list[0] != "Loan":
